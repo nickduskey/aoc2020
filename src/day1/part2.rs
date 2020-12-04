@@ -31,12 +31,6 @@ pub fn run() {
         index1 += 1;
     }
 
-    println!("Index 1 {}", index1);
-    println!("Val 1 {}", lines[index1 as usize]);
-    println!("Index 2 {}", index2);
-    println!("Val 2 {}", lines[index2 as usize]);
-    println!("Index 3 {}", index3);
-    println!("Val 3 {}", lines[index3 as usize]);
     let line1 = lines[index1 as usize];
     let line2 = lines[index2 as usize];
     let line3 = lines[index3 as usize];

@@ -34,19 +34,11 @@ pub fn run() {
         // count instances of letter in string
         let count: i32 = password.matches(&letter_to_check).count() as i32;
 
-        println!("====================================");
-        println!("min: {}", min);
-        println!("max: {}", max);
-        println!("letter_to_check: {}", letter_to_check);
-        println!("password: {}", password);
-        println!("count: {}", count);
-
         // add to valid count if valid
         if count >= min && count <= max {
             println!("Is valid.");
             num_valid_passwords += 1;
         }
-        println!("====================================");
     }
     println!("Total valid passwords: {}", num_valid_passwords);
 }
