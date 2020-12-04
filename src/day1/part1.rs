@@ -1,15 +1,8 @@
 use crate::utils;
 
-pub fn fetch_data() -> String {
-    println!("Fetching data...");
-    let res = utils::http_get("https://adventofcode.com/2020/day/1/input");
-    let s = res.text();
-    return s.unwrap();
-}
-
 pub fn run() {
     println!("Running part 1...");
-    let data = fetch_data();
+    let data = utils::fetch_data(1);
     let split = data.lines();
     let lines: Vec<&str> = split.collect();
 

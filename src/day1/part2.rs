@@ -1,8 +1,8 @@
-use crate::day1::part1;
+use crate::utils;
 
 pub fn run() {
     println!("Running part 2...");
-    let data = part1::fetch_data();
+    let data = utils::fetch_data(1);
     let split = data.lines();
     let lines: Vec<&str> = split.collect();
 
